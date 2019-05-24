@@ -11,7 +11,7 @@
     <main>
       <div class="page container gc">
         <h1 class="title">
-          Femin Hand Bag Page
+          Femi Hand Bag
         </h1>
         <h2 class="subtitle">
           A personal website and portfolio
