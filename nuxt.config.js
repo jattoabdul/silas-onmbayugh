@@ -7,8 +7,8 @@ dotenv.config()
 export default {
   mode: 'universal',
   router: {
-    // linkExactActiveClass: 'active',
-    linkActiveClass: 'active'
+    linkExactActiveClass: 'active'
+    // linkActiveClass: 'active'
   },
   /*
   ** Headers of the page
@@ -24,7 +24,8 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description },
       { hid: 'og:site_name', name: 'og:site_name', content: 'Silas Onmbayugh' },
       { hid: 'apple-mobile-web-app-title', name: 'apple-mobile-web-app-title', content: 'Silas Onmbayugh' },
-      { hid: 'og:title', name: 'og:title', content: 'Silas Onmbayugh' }
+      { hid: 'og:title', name: 'og:title', content: 'Silas Onmbayugh' },
+      { name: 'theme-color', content: '#000000' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
