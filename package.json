@@ -4,7 +4,7 @@
   "description": "A personal website and portfolio",
   "license": "MIT",
   "author": "Abdulqahhar Aminujatto &lt;jattoade@gmail.com&gt;",
-  "private": false,
+  "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
