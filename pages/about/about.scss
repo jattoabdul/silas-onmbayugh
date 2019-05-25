@@ -1,93 +1,118 @@
-header {
-  margin-top: 6rem;
-  margin-bottom: .5rem;
-  grid-column-gap: 70%;
-
-  .about-header-title {
-    position: relative;
-    padding: 0 0 0.5rem;
-    width: 5rem;
-
-    &:after {
-      content: ' ';
-      position: absolute;
-      background: $dark;
-      height: 2px;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-    }
-  }
-
-  a.dark {
-    max-width: 8rem;
-    min-width: 8rem;
-  }
-}
-
 .about-wrapper {
+  margin-top: 6rem;
   grid-column-gap: 10vw;
   margin-bottom: 5rem;
 
+  @include breakpoint($max: 900px) {
+    margin-top: 2rem;
+  }
+
+  @include for-phone-only {
+    margin-top: 2rem;
+  }
+
   .about-me {
+    padding-bottom: 1.5rem;
+
     p {
       line-height: 1.5;
       margin-top: 1.5rem;
     }
+
+    .about-header-title {
+      display: inline-block;
+      position: relative;
+      padding: 0 0 0.9rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 1.4rem;
+      width: 7rem;
+  
+      &:after {
+        content: ' ';
+        position: absolute;
+        background: $dark;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+      }
+    }
   }
 
-  .work-experience {
-    background: white;
-    color: black;
-    border: 1px solid $dark;
-    position: relative;
-    margin-top: 2rem;
+  .work-experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    &:after {
-      position: absolute;
-      content: ' ';
+    a.dark {
+      align-self: flex-end;
+      min-width: 8rem;
+      margin-bottom: 1.5rem;
+      font-family: 'Lato', sans-serif;
+
+      @include breakpoint($max: 900px) {
+        align-self: flex-start;
+      }
+    
+      @include for-phone-only {
+        align-self: flex-start;
+      }
+    }
+
+    .work-experience {
+      background: white;
+      color: black;
       border: 1px solid $dark;
-      z-index: -1;
-      top: -8px;
-      left: -8px;  
-      width: 100%;
-      height: 100%;
-    }
-
-    .experience {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 1rem 0 1.2rem;
-      margin: 0 2rem;
-
-      .work-detail {
-        display: flex;
-        flex-direction: column;
-        .company-name {
-          font-weight: 600;
-          text-transform: capitalize;
-          margin-bottom: .3rem;
+      position: relative;
+      margin-top: 2rem;
+  
+      &:after {
+        position: absolute;
+        content: ' ';
+        border: 1px solid $dark;
+        z-index: -1;
+        top: -8px;
+        left: -8px;  
+        width: 100%;
+        height: 100%;
+      }
+  
+      .experience {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 0 1.2rem;
+        margin: 0 2rem;
+  
+        .work-detail {
+          display: flex;
+          flex-direction: column;
+          .company-name {
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-bottom: .3rem;
+          }
+          .position-title {
+            text-transform: uppercase;
+            font-size: .5rem;
+            color: grey;
+          }
         }
-        .position-title {
-          text-transform: uppercase;
-          font-size: .5rem;
-          color: grey;
+        .duration {
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-start;
+          span {
+            text-transform: uppercase;
+            font-size: .5rem;
+            font-weight: 500;      
+          }
         }
       }
-      .duration {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        span {
-          text-transform: uppercase;
-          font-size: .5rem;
-          font-weight: 500;      
-        }
+  
+      .experience:not(:last-child) {
+        border-bottom: 1px solid $dark;
       }
-    }
-
-    .experience:not(:last-child) {
-      border-bottom: 1px solid $dark;
     }
   }
 }

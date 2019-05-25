@@ -9,7 +9,16 @@
     background: $light;
     border: 1px solid $dark;
     padding: 2rem;
+    width: 60vw;
     position: relative;
+
+    @include breakpoint($max: 900px) {
+      width: 100%;
+    }
+
+    @include for-phone-only {
+      width: 100%;
+    }
 
     &:after {
       position: absolute;
@@ -24,11 +33,23 @@
 
     h2 {
       margin: 0;
+      font-size: 2.5rem;
     }
 
     p {
       margin-top: 1rem;
-      font-size: 2rem;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      width: 80%;
+      font-family: 'Lato', sans-serif;
+
+      @include breakpoint($max: 900px) {
+        width: 100%;
+      }
+  
+      @include for-phone-only {
+        width: 100%;
+      }
     }
   }
 }
@@ -151,6 +172,7 @@
             position: relative;
             text-transform: capitalize;
             padding: 0.45rem 0 0.5rem;
+            font-size: 2rem;
         
             &:after {
               content: ' ';
@@ -162,6 +184,13 @@
               left: 0;
             }
           }
+        }
+
+        p {
+          line-height: 1.6rem;
+          font-family: 'Lato', sans-serif;
+          font-size: 1.1rem;
+          cursor: pointer;
         }
 
         @include breakpoint($max: 900px) {

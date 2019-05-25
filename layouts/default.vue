@@ -19,10 +19,10 @@
         </button>
       </div>
       <div class="socials">
-        <a href="#"><img src="/svg/linkedin.svg" alt="linkedin"></a>
-        <a href="#"><img src="/svg/dribbble.svg" alt="dribble"></a>
-        <a href="#"><img src="/svg/twitter.svg" alt="twitter"></a>
-        <a href="#"><img src="/svg/instagram.svg" alt="instagram"></a>
+        <a href="https://linkedin.com/in/silasonmbayugh/"><img src="/svg/linkedin.svg" alt="linkedin"></a>
+        <a href="https://dribbble.com/onsylas"><img src="/svg/dribbble.svg" alt="dribble"></a>
+        <a href="https://twitter.com/onsylas"><img src="/svg/twitter.svg" alt="twitter"></a>
+        <a href="https://www.instagram.com/onsylas/"><img src="/svg/instagram.svg" alt="instagram"></a>
       </div>
     </footer>
   </div>
