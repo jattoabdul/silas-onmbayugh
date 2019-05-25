@@ -1,7 +1,293 @@
 // Commons
+.dark {
+  background: $dark;
+  color: $light;
+}
 
+.header-project-detail-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 2rem;
+  padding-top: 8rem;
+
+  @include breakpoint($max: 900px) {
+    // grid-template-columns: 1fr 3fr;
+    grid-column-gap: 3rem;
+  }
+
+  @include for-phone-only {
+    grid-template-columns: 1fr;
+    grid-row-gap: 3rem;
+    padding-top: 2rem;
+  }
+  
+  .header-project-detail {
+    h2 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-family: 'Lato', sans-serif !important;
+      margin-bottom: 1rem;
+
+      .title {
+        font-weight: bold;
+      }
+
+      .value {}
+    }
+  }
+
+  .header-project-detail-image {
+    height: 50vh;
+
+    div {
+      background: url('/img/works/gc.png');
+      background-size: contain;
+      position: relative;
+      border: 1px solid $dark;
+      border-bottom: none;
+      height: 100%;
+      z-index: 2;
+
+      &:after {
+        position: absolute;
+        content: ' ';
+        border: 1px solid $dark;
+        border-bottom: none;
+        border-right: none;
+        z-index: -1;
+        top: -8px;
+        left: -8px;  
+        width: 100%;
+        height: 102.5%;
+      }
+
+      &:before {
+        position: absolute;
+        content: ' ';
+        border-right: 1px solid $dark;
+        z-index: -1;
+        top: -8px;
+        left: -8px;  
+        width: 100%;
+        height: 2.5%;
+      }
+    }
+
+    @include breakpoint($max: 900px) {
+      height: 60vh;
+    }
+  
+    @include for-phone-only {
+      height: 35vh;
+    }
+  }
+}
+
+.overview-section {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.header-title {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0.9rem;
+  margin-bottom: 1.7rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: fit-content;
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    background: $dark;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  &.dark {
+    &:after {
+      background: $light;
+    }
+  }
+}
+
+.description {
+  font-family: 'Lato', sans-serif !important;
+  line-height: 1.6rem;
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
+
+  .descripton-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: $light;
+    border: 1px solid $dark;
+    color: $dark;
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: 1.2rem;
+
+    &:before {
+      position: absolute;
+      content: ' ';
+      border: 1px solid $dark;
+      background: #f3f3f3;            
+      z-index: -1;
+      top: -10px;
+      left: -10px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .sub-header {}
+}
+
+.description-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  width: 100%;
+  margin-bottom: 6rem;
+
+  img {
+    max-width: 100%;
+  }
+
+  &.type2{
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 1rem;
+
+    .eq_h {
+      height: 100%;
+    }
+  }
+
+  @include breakpoint($max: 767px) {
+    // grid-template-columns: 1fr 1fr;
+  }
+
+  @include for-phone-only {
+    grid-template-columns: 1fr;
+  }
+}
+
+.my-role-section {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  p.description {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+}
+
+.design-process-section {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  background: #f3f3f3;
+
+  .header-title {
+    margin-bottom: 3rem;
+  }
+
+  .description {
+    margin-bottom: 6rem;
+  }
+}
+
+.app-showcase-section {
+  background: #f3f3f3;
+
+  .admin-tools {
+    display: grid;
+    grid-template:
+    'header header header'
+    'showcase1 . showcase2'
+    'showcase3 showcase4 showcase5';
+    
+    img {
+      max-width: 100%;
+    }
+
+    .showcase-header {
+      grid-area: header;
+      margin-bottom: 2rem;
+    }
+
+    .showcase-img-1 {
+      grid-area: showcase1;
+    }
+
+    .showcase-img-2 {
+      grid-area: showcase2;
+    }
+
+    .showcase-img-3 {
+      grid-area: showcase3;
+    }
+
+    .showcase-img-4 {
+      grid-area: showcase4;
+    }
+
+    .showcase-img-5 {
+      grid-area: showcase5;
+    }
+  }
+}
+
+.reflection-section {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+.description-action {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+
+  a {
+    &.active {
+      position: relative;
+
+      &:after {
+        content: ' ';
+        position: absolute;
+        background: $dark;
+        height: 1px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
 
 // GC
+.gc {
+  header {
+    background: #e1b1b1;
+
+    .header-project-detail {
+      h2 {
+        color: #b23231;
+      }
+    }
+  }
+
+  .sub-header {
+    color: #b23231;
+  }
+}
 
 // FMHB
 
