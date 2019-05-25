@@ -28,7 +28,8 @@ export default {
       { name: 'theme-color', content: '#000000' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,500,600,700|Lato:400,700' }
     ]
   },
 
