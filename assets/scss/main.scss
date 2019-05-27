@@ -41,6 +41,21 @@ body {
   padding-left: 15vw;
   padding-right: 15vw;
 
+  &.s2 {
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+
+    @include breakpoint($max: 767px) {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+  
+    @include for-phone-only {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+  }
+
   &.x2 {
     padding-left: 30vw;
     padding-right: 30vw;

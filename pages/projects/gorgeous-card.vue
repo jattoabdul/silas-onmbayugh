@@ -57,10 +57,10 @@
             <span class="sub-header">Research</span> - I started off doing a design qualitative analysis of the old app screens, revisiting the existing documentation, going through records of customer interactions and interviewing existing stakeholders. It helped me get a much better understanding of who the user was, but it still wasn&apos;t enough, so the next step was using that information to outline a few base personas and then do research to fill in our knowledge gaps.
           </p>
           <div class="description-images wide">
-            <img src="/img/gc/gc-002.png" alt="gc-screen-2">
-            <img src="/img/gc/gc-001.png" alt="gc-screen-1">
-            <img src="/img/gc/gc-004.png" alt="gc-screen-4">
-            <img src="/img/gc/gc-003.png" alt="gc-screen-3">
+            <img src="/img/gc/gc-002-3x.png" alt="gc-screen-2">
+            <img src="/img/gc/gc-001-3x.png" alt="gc-screen-1">
+            <img src="/img/gc/gc-004-3x.png" alt="gc-screen-4">
+            <img src="/img/gc/gc-003-3x.png" alt="gc-screen-3">
           </div>
           <p class="description two">
             <span class="descripton-number">2</span>
@@ -92,11 +92,38 @@
             <h3 class="container showcase-header">
               Admin web tool
             </h3>
-            <img class="showcase-img-1" src="/img/gc/gc-002.png" alt="gc-screen-1">
-            <img class="showcase-img-2" src="/img/gc/gc-002.png" alt="gc-screen-2">
-            <img class="showcase-img-3" src="/img/gc/gc-002.png" alt="gc-screen-3">
-            <img class="showcase-img-4" src="/img/gc/gc-002.png" alt="gc-screen-4">
-            <img class="showcase-img-5" src="/img/gc/gc-002.png" alt="gc-screen-5">
+            <div class="admin-tools-showcase-images">
+              <img class="showcase-img-1" src="/img/gc/gc-002.png" alt="gc-screen-1">
+              <img class="showcase-img-2" src="/img/gc/gc-002.png" alt="gc-screen-2">
+              <img class="showcase-img-3" src="/img/gc/gc-002.png" alt="gc-screen-3">
+              <img class="showcase-img-4" src="/img/gc/gc-002.png" alt="gc-screen-4">
+              <img class="showcase-img-5" src="/img/gc/gc-002.png" alt="gc-screen-5">
+            </div>
+          </div>
+          <div class="loyalty-app">
+            <h3 class="container showcase-header">
+              Loyalty app
+            </h3>
+            <div class="loyalty-app-showcase-images">
+              <img class="showcase-img-1" src="/img/gc/gc-002.png" alt="gc-screen-1">
+              <img class="showcase-img-2" src="/img/gc/gc-002.png" alt="gc-screen-2">
+              <img class="showcase-img-3" src="/img/gc/gc-002.png" alt="gc-screen-3">
+              <img class="showcase-img-4" src="/img/gc/gc-002.png" alt="gc-screen-4">
+              <img class="showcase-img-5" src="/img/gc/gc-002.png" alt="gc-screen-5">
+            </div>
+          </div>
+          <div class="mobile-app">
+            <h3 class="container showcase-header">
+              Mobile App
+            </h3>
+            <div class="container s2 mobile-showcase-images">
+              <img class="mobile-showcase-img" src="/img/gc/gc-mobile-1.jpg" alt="gc-screen-1">
+              <img class="mobile-showcase-img" src="/img/gc/gc-mobile-2.jpg" alt="gc-screen-2">
+              <img class="mobile-showcase-img" src="/img/gc/gc-mobile-3.jpg" alt="gc-screen-3">
+              <img class="mobile-showcase-img" src="/img/gc/gc-mobile-4.jpg" alt="gc-screen-4">
+              <img class="mobile-showcase-img" src="/img/gc/gc-mobile-5.jpg" alt="gc-screen-5">
+              <img class="mobile-showcase-img" src="/img/gc/gc-mobile-6.jpg" alt="gc-screen-5">
+            </div>
           </div>
         </div>
         <div class="reflection-section container">
@@ -113,8 +140,11 @@
             <nuxt-link to="/" class="btn dark">
               Take me home
             </nuxt-link>
-            <nuxt-link to="/" class="active">
-              Next Project ->
+            <nuxt-link to="/projects/femi-hand-bag" class="active">
+              Next Project
+              <span>
+                <img src="/svg/arrow-right.svg" alt="next project">
+              </span>
             </nuxt-link>
           </div>
         </div>
