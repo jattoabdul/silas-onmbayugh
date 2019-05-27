@@ -331,6 +331,14 @@
     .showcase-header {
       margin-bottom: 2rem;
       padding-left: 15rem;
+
+      @include breakpoint($max: 767px) {
+        // grid-template-columns: 1fr 1fr;
+      }
+    
+      @include for-phone-only {
+        padding-left: 1.5rem;
+      }
     }
   }
 
@@ -370,7 +378,7 @@
         }
       
         @include for-phone-only {
-          margin-left: 0;
+          margin-left: 3rem;
         }
       }
     }
