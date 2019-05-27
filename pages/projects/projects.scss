@@ -204,47 +204,6 @@
   }
 }
 
-.app-showcase-section {
-  background: #f3f3f3;
-
-  .admin-tools {
-    display: grid;
-    grid-template:
-    'header header header'
-    'showcase1 . showcase2'
-    'showcase3 showcase4 showcase5';
-    
-    img {
-      max-width: 100%;
-    }
-
-    .showcase-header {
-      grid-area: header;
-      margin-bottom: 2rem;
-    }
-
-    .showcase-img-1 {
-      grid-area: showcase1;
-    }
-
-    .showcase-img-2 {
-      grid-area: showcase2;
-    }
-
-    .showcase-img-3 {
-      grid-area: showcase3;
-    }
-
-    .showcase-img-4 {
-      grid-area: showcase4;
-    }
-
-    .showcase-img-5 {
-      grid-area: showcase5;
-    }
-  }
-}
-
 .reflection-section {
   padding-top: 7rem;
   padding-bottom: 5rem;
@@ -287,9 +246,128 @@
   .sub-header {
     color: #b23231;
   }
+
+  .app-showcase-section {
+    background: #f3f3f3;
+    padding-bottom: 8rem;
+  
+    // .admin-tools
+    .admin-tools {
+      margin-bottom: 6rem;
+      
+      img {
+        max-width: 100%;
+      }
+  
+      .showcase-header {
+        margin-bottom: 2rem;
+      }
+  
+      .admin-tools-showcase-images {}
+    }
+  
+    // .loyalty-app
+    .loyalty-app {
+      margin-bottom: 6rem;
+
+      .showcase-header {
+        margin-bottom: 2rem;
+      }
+
+      .loyalty-app-showcase-images {}
+    }
+  
+    // .mobile-app
+    .mobile-app {
+      .showcase-header {
+        margin-bottom: 2rem;
+      }
+
+      .mobile-showcase-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 3rem;
+        grid-row-gap: 6rem;
+  
+        img {
+          max-width: 100%;
+          border: 2px solid $dark;
+        }
+      }
+    }
+  }
 }
 
 // FMHB
+.fmhb {
+  header {
+    background: #39291f;
+
+    nav {
+      color: $light;
+
+      a {
+        &.active {
+          &:after {
+            background: $light;
+          }
+        }
+    
+      }
+    }
+
+    .header-project-detail {
+      h2 {
+        color: $light;
+      }
+
+      p {
+        color: $light;
+      }
+    }
+  }
+  // .final-mockup
+  .final-mockup {
+    .showcase-header {
+      margin-bottom: 2rem;
+      padding-left: 15rem;
+    }
+  }
+
+  .sub-header {
+    color: #d1001e;
+  }
+
+  .header-project-detail-image {
+    div {
+      &:after {
+        border: 1px solid $light;
+      }
+  
+      &:before {
+        border-right: 1px solid $light;
+      }
+    }
+  }
+
+  .bag-showcase-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+
+    img {
+      max-width: 100%;
+      border: 2px solid $dark;
+
+      &.first {
+        grid-column: 1 / -1;
+        width: 65vw;
+        margin-left: 6rem;
+      }
+    }
+  }
+}
 
 // FXM
 
