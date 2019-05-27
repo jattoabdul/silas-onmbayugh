@@ -363,7 +363,15 @@
       &.first {
         grid-column: 1 / -1;
         width: 65vw;
-        margin-left: 6rem;
+        margin-left: 9rem;
+
+        @include breakpoint($max: 767px) {
+          // grid-template-columns: 1fr 1fr;
+        }
+      
+        @include for-phone-only {
+          margin-left: 0;
+        }
       }
     }
   }
