@@ -92,24 +92,28 @@
             <h3 class="container showcase-header">
               Admin web tool
             </h3>
-            <div class="admin-tools-showcase-images">
-              <img class="showcase-img-1" src="/img/gc/gc-002.png" alt="gc-screen-1">
-              <img class="showcase-img-2" src="/img/gc/gc-002.png" alt="gc-screen-2">
-              <img class="showcase-img-3" src="/img/gc/gc-002.png" alt="gc-screen-3">
-              <img class="showcase-img-4" src="/img/gc/gc-002.png" alt="gc-screen-4">
-              <img class="showcase-img-5" src="/img/gc/gc-002.png" alt="gc-screen-5">
+            <div class="admin-tools-showcase-images-top">
+              <img class="showcase-img-1" src="/img/gc/gc-awt-01.jpg" alt="gc-screen-1">
+              <img class="showcase-img-2" src="/img/gc/gc-awt-02.jpg" alt="gc-screen-2">
+            </div>
+            <div class="admin-tools-showcase-images-bottom">
+              <img class="showcase-img-3" src="/img/gc/gc-awt-03.jpg" alt="gc-screen-3">
+              <img class="showcase-img-4" src="/img/gc/gc-awt-04.jpg" alt="gc-screen-4">
+              <img class="showcase-img-5" src="/img/gc/gc-awt-05.jpg" alt="gc-screen-5">
             </div>
           </div>
           <div class="loyalty-app">
             <h3 class="container showcase-header">
               Loyalty app
             </h3>
-            <div class="loyalty-app-showcase-images">
-              <img class="showcase-img-1" src="/img/gc/gc-002.png" alt="gc-screen-1">
-              <img class="showcase-img-2" src="/img/gc/gc-002.png" alt="gc-screen-2">
-              <img class="showcase-img-3" src="/img/gc/gc-002.png" alt="gc-screen-3">
-              <img class="showcase-img-4" src="/img/gc/gc-002.png" alt="gc-screen-4">
-              <img class="showcase-img-5" src="/img/gc/gc-002.png" alt="gc-screen-5">
+            <div class="admin-tools-showcase-images-top">
+              <img class="showcase-img-1" src="/img/gc/gc-lya-01.jpg" alt="gc-screen-1">
+              <img class="showcase-img-2" src="/img/gc/gc-lya-02.jpg" alt="gc-screen-2">
+            </div>
+            <div class="admin-tools-showcase-images-bottom">
+              <img class="showcase-img-3" src="/img/gc/gc-lya-03.jpg" alt="gc-screen-3">
+              <img class="showcase-img-4" src="/img/gc/gc-lya-04.jpg" alt="gc-screen-4">
+              <img class="showcase-img-5" src="/img/gc/gc-lya-05.jpg" alt="gc-screen-5">
             </div>
           </div>
           <div class="mobile-app">

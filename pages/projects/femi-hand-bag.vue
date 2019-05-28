@@ -28,7 +28,7 @@
       </div>
     </header>
     <main>
-      <div class="page gc">
+      <div class="page fmhb">
         <div class="overview-section container">
           <h3 class="header-title">
             Overview
