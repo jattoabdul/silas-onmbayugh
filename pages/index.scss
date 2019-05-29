@@ -1,0 +1,257 @@
+.about-me-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem 0;
+
+  .about-me-box {
+    color: $dark;
+    background: $light;
+    border: 1px solid $dark;
+    padding: 2rem;
+    width: 60vw;
+    position: relative;
+
+    @include breakpoint($max: 900px) {
+      width: 100%;
+    }
+
+    @include for-phone-only {
+      width: 100%;
+    }
+
+    &:after {
+      position: absolute;
+      content: ' ';
+      border: 1px solid $dark;
+      z-index: -1;
+      top: -8px;
+      left: -8px;  
+      width: 100%;
+      height: 100%;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      width: 80%;
+      font-family: 'Lato', sans-serif;
+
+      @include breakpoint($max: 900px) {
+        width: 100%;
+      }
+  
+      @include for-phone-only {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.selected-work {
+  header {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    span {
+      position: relative;
+      padding: 0.45rem 0 0.5rem;
+  
+      &:after {
+        content: ' ';
+        position: absolute;
+        background: $dark;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .works-wrapper {
+    grid-column-gap: 5rem;
+    .work-outline-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // padding: 50% 0;
+
+      .image {
+        position: relative;
+        border: 1px solid $dark;
+
+        &:before {
+          position: absolute;
+          content: ' ';
+          border: 1px solid $dark;
+          z-index: -1;
+          top: -8px;
+          left: -8px;  
+          width: 100%;
+          height: 100%;
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+
+        @include breakpoint($max: 900px) {
+          display: none;
+        }
+
+        @include for-phone-only {
+          display: none;
+        }
+      }
+    }
+
+    .works {
+
+      .work {
+        margin-bottom: 2.5rem;
+        color: gray;
+
+        .mobile-image {
+          position: relative;
+          border: 1px solid $dark;
+          display: none;
+
+          &:before {
+            position: absolute;
+            content: ' ';
+            border: 1px solid $dark;
+            z-index: -1;
+            top: -8px;
+            left: -8px;  
+            width: 100%;
+            height: 100%;
+          }
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+
+          @include breakpoint($max: 900px) {
+            display: block;
+            margin-bottom: 3rem;
+          }
+        
+          @include for-phone-only {
+            display: block;
+            margin-bottom: 3rem;
+          }
+        }
+
+        header {
+          font-size: 1.2rem;
+          font-weight: 500;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 1rem;
+          cursor: pointer;
+
+          &:hover {
+            font-weight: 600;
+          }
+
+          span {
+            position: relative;
+            text-transform: capitalize;
+            padding: 0.45rem 0 0.5rem;
+            font-size: 2rem;
+        
+            &:after {
+              content: ' ';
+              position: absolute;
+              background: gray;
+              height: 2px;
+              width: 100%;
+              bottom: 0;
+              left: 0;
+            }
+          }
+        }
+
+        p {
+          line-height: 1.6rem;
+          font-family: 'Lato', sans-serif;
+          font-size: 1.1rem;
+          cursor: pointer;
+        }
+
+        .read-more.active {
+          display: none;
+        }
+
+        @include breakpoint($max: 900px) {
+          color: $dark;
+          margin-bottom: 10rem;
+
+          header {
+            span {
+              &:after {
+                background: $dark;
+              }
+            }
+          }
+        }
+      
+        @include for-phone-only {
+          color: $dark;
+          margin-bottom: 10rem;
+
+          header {
+            span {
+              &:after {
+                background: $dark;
+              }
+            }
+          }
+
+          .read-more.active {
+            display: inline-block;
+            margin-top: 1rem;
+            padding-bottom: 8px;
+            position: relative;
+      
+            &:after {
+              content: ' ';
+              position: absolute;
+              background: $dark;
+              height: 1px;
+              width: 100%;
+              bottom: 0;
+              left: 0;
+            }
+          }
+        }
+
+        &.active, &:hover {
+          color: $dark;
+
+          header {
+            span {
+              &:after {
+                background: $dark;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
