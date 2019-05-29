@@ -1,5 +1,5 @@
 <template>
-  <div class="child-level sp layout">
+  <div class="child-level lgpay layout">
     <header>
       <nav class="container">
         <nuxt-link to="/" class="active">
@@ -11,7 +11,7 @@
       </nav>
       <div class="header-project-detail-wrapper container">
         <div class="header-project-detail">
-          <h2>Shareportal</h2>
+          <h2>LagosPay</h2>
           <p>
             <span class="title">Date:</span>
             <span class="value"> October 2018</span>
@@ -22,22 +22,20 @@
           </p>
         </div>
         <div class="header-project-detail-image">
-          <div>
-            <img src="/img/sp/m-sp-1.png" alt="mobile shareportal">
-          </div>
+          <div />
         </div>
       </div>
     </header>
     </nav>
     <main>
-      <div class="page container sp">
+      <div class="page container lgpay">
         <h2 class="title short">
           Sorry, but this project is protected <br> Please contact me for access.
         </h2>
         <p class="subtitle short active">
           <span class="active">
             <span>Shoot me a mail:</span>
-            <a href="mailto:onsilas@gmail.com" target="_blank">onsilas@gmail.com</a>
+            <a href="mailto:silas@onsilas.com" target="_blank">silas@onsilas.com</a>
           </span>
         </p>
 
@@ -61,7 +59,7 @@
 export default {
   layout: 'single',
   head: {
-    title: 'Silas Onmbayugh - Shareportal'
+    title: 'Silas Onmbayugh - LagosPay'
   },
   components: {}
 }

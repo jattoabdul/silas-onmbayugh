@@ -31,6 +31,12 @@
               <span v-text="work.title" />
             </header>
             <p v-text="work.desc" />
+            <nuxt-link :to="work.pageLink" class="read-more active">
+              Read more
+              <span>
+                <img src="/svg/arrow-right.svg" alt="this project">
+              </span>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -51,32 +57,37 @@ export default {
           title: 'Gorgeous Card',
           slug: 'gorgeous-card',
           desc: 'Gorgeous card employs the use of cards, a mobile and web app to help businesses manage customers, record purchases and reward returning/loyal customers.',
-          imageLink: '/img/works/gc.png'
+          imageLink: '/img/works/gc.png',
+          pageLink: '/projects/gorgeous-card'
         },
         {
           title: 'Femi Hand Bag',
           slug: 'femi-hand-bag',
           desc: 'The FemiHandbags brand aims to capture a spirit of individuality which does not attempt to adhere to seasonal trends.',
-          imageLink: '/img/works/fhb.png'
+          imageLink: '/img/works/fhb.png',
+          pageLink: '/projects/femi-hand-bag'
         },
         {
           title: 'FX Mallam',
           slug: 'fx-mallam',
           desc: 'FX Mallam is a Currency Exchange Platform where users can trade in either of 4 currencies with directly with other users on the platform.',
-          imageLink: '/img/works/fxm.png'
+          imageLink: '/img/works/fxm.png',
+          pageLink: '/projects/fx-mallam'
         },
         {
-          title: 'Shareportal',
-          slug: 'shareportal',
-          desc: 'Shareportal is a mobile and web platform that enables shareholders to manage their shareholdings.',
-          imageLink: '/img/works/spsa.png'
+          title: 'Lagospay',
+          slug: 'lagospay',
+          desc: 'Customer payment app that leverages on existing payment channels such USSD to enable reliable and fast payment at the point of sale.',
+          imageLink: '/img/works/spsab.png',
+          pageLink: '/projects/lagospay'
         }
       ],
       activeWork: {
         title: 'Gorgeous Card',
         slug: 'gorgeous-card',
         desc: 'Gorgeous card employs the use of cards, a mobile and web app to help businesses manage customers, record purchases and reward returning/loyal customers.',
-        imageLink: '/img/works/gc.png'
+        imageLink: '/img/works/gc.png',
+        pageLink: '/projects/gorgeous-card'
       }
     }
   },

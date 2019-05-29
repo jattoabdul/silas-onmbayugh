@@ -488,7 +488,7 @@
     }
 
     .header-project-detail-wrapper {
-      grid-template-columns: 2fr 3fr 3fr;
+      grid-template-columns: 1fr 3fr;
     }
 
     .header-project-detail {
@@ -502,20 +502,12 @@
     }
 
     .header-project-detail-image {
-      height: 35.5vh;
-
       div {
-        background: url('/img/fxm/wallet-1.png');
+        background: url('/img/fxm/wallet.png');
         background-repeat: no-repeat;
         background-size: cover;
         border: 1px solid $light;
-
-        &.second {
-          background: url('/img/fxm/market-1.png');
-          background-repeat: no-repeat;
-          background-size: cover;
-          border: 1px solid $light;
-        }
+        position: relative;
 
         &:after {
           border: 1px solid $light;
@@ -575,8 +567,8 @@
   }
 }
 
-// SP
-.sp {
+// LGPAY
+.lgpay {
   header {
     background: #6271d2;
 
@@ -594,7 +586,7 @@
     }
 
     .header-project-detail-wrapper {
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 3fr;
 
       @include breakpoint($max: 767px) {
         // grid-template-columns: 1fr 1fr;
@@ -617,7 +609,7 @@
 
     .header-project-detail-image {
       div {
-        background: url('/img/sp/sp-1.png');
+        background: url('/img/lgp/lg-pay.png');
         background-repeat: no-repeat;
         background-size: cover;
         border: 1px solid $light;
@@ -660,7 +652,7 @@
   }
 
   .page {
-    &.sp {
+    &.lgpay {
       text-align: center;
       padding-top: 2rem;
       padding-bottom: 4rem;

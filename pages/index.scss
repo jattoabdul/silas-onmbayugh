@@ -193,6 +193,10 @@
           cursor: pointer;
         }
 
+        .read-more.active {
+          display: none;
+        }
+
         @include breakpoint($max: 900px) {
           color: $dark;
           margin-bottom: 10rem;
@@ -215,6 +219,23 @@
               &:after {
                 background: $dark;
               }
+            }
+          }
+
+          .read-more.active {
+            display: inline-block;
+            margin-top: 1rem;
+            padding-bottom: 8px;
+            position: relative;
+      
+            &:after {
+              content: ' ';
+              position: absolute;
+              background: $dark;
+              height: 1px;
+              width: 100%;
+              bottom: 0;
+              left: 0;
             }
           }
         }

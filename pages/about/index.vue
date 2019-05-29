@@ -12,7 +12,7 @@
         </p>
       </div>
       <div class="work-experience-wrapper">
-        <a class="btn dark" href="#" target="_blank">Download CV</a>
+        <a class="btn dark" href="https://docs.google.com/document/d/1nWUWLXVuySVkhK6pGVfNfNakk1mNp4EbTm81zvQa7dM" target="_blank">Download CV</a>
         <div class="work-experience">
           <div class="experience">
             <div class="work-detail">

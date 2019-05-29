@@ -23,11 +23,6 @@
         </div>
         <div class="header-project-detail-image">
           <div />
-          <!-- <img src="/img/works/gc.png" alt="gorgeous cards"> -->
-        </div>
-        <div class="header-project-detail-image">
-          <div class="second" />
-          <!-- <img src="/img/works/gc.png" alt="gorgeous cards"> -->
         </div>
       </div>
     </header>
@@ -40,7 +35,7 @@
         <p class="subtitle short active">
           <span class="active">
             <span>Shoot me a mail:</span>
-            <a href="mailto:onsilas@gmail.com" target="_blank">onsilas@gmail.com</a>
+            <a href="mailto:silas@onsilas.com" target="_blank">silas@onsilas.com</a>
           </span>
         </p>
 
@@ -48,7 +43,7 @@
           <nuxt-link to="/" class="btn dark">
             Take me home
           </nuxt-link>
-          <nuxt-link to="/projects/shareportal" class="active">
+          <nuxt-link to="/projects/lagospay" class="active">
             Next Project
             <span>
               <img src="/svg/arrow-right.svg" alt="next project">

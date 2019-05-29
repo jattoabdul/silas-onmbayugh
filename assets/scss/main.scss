@@ -137,6 +137,10 @@ footer {
       font-weight: normal;
       margin-bottom: 1rem;
     }
+
+    .contact-action {
+      font-size: 0.75rem;
+    }
   }
 }
 
@@ -189,7 +193,7 @@ a {
 // }
 
 
-button, .btn {
+button, .btn, .contact-action {
   background: white;
   color: black;
   border-radius: 0;
