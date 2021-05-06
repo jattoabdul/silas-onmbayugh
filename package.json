@@ -24,7 +24,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^2.6.0",
     "@nuxtjs/style-resources": "^0.1.2",
-    "sanitize-html": "^1.20.0",
+    "sanitize-html": "^2.3.2",
     "sass-loader": "^7.1.0",
     "string_decoder": "^1.2.0",
     "vue-loading-overlay": "^3.1.1",
